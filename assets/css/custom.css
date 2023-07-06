@@ -1,0 +1,69 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 1600px){
+    .container{
+        max-width: 1540px;
+    }
+}
+.services .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    height: 225px;
+    text-align: center;
+}
+
+
+
+.topBar{
+    background: #003468;
+}
+.topBar .nav-link{
+    padding-top:1.5px;
+    padding-bottom:1.5px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: #003468;
+    color:#fff;
+}
+.nav-pills .nav-link{
+    font-weight: 500;
+    border-radius: 35px;
+    color:#000;
+}
+.heroBg{
+    background: url('../images/header.png');
+    background-size: cover;
+}
+.heroList{
+    list-style: none;
+}
+.heroList li{
+    list-style: none;
+    }
+    .card{
+        min-height: 675px;
+    }
+.services h2 {
+    min-height: 5rem;
+}
+.medical{
+    background:url('../images/plusBG.png') left center no-repeat;
+}
+.carousel-caption {
+ 
+    top: 35%;
+}
+.carousel-item img{
+    min-height: 400px;
+}
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+footer.bg-body-tertiary{
+    background:url('../images/plusBG2.png') right center no-repeat;
+}
