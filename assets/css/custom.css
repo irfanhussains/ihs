@@ -67,3 +67,8 @@ body{
 footer.bg-body-tertiary{
     background:url('../images/plusBG2.png') right center no-repeat;
 }
+@media (max-width: 480px){
+    .navbar-brand img{
+        max-width: 220px;
+    }
+}
