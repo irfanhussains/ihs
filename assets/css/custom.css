@@ -6,6 +6,19 @@ body{
         max-width: 1540px;
     }
 }
+a {
+    color: #003468;
+}
+.btn-primary {
+    
+    --bs-btn-bg: #003468;
+    --bs-btn-border-color: #003468;
+
+
+}
+.card-text{
+    min-height:220px;
+}
 .services .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -44,20 +57,18 @@ body{
 .heroList li{
     list-style: none;
     }
-    .card{
-        min-height: 675px;
-    }
+
 .services h2 {
     min-height: 5rem;
 }
 .medical{
     background:url('../images/plusBG.png') left center no-repeat;
 }
-.carousel-caption {
+#myCarousel .carousel-caption {
  
     top: 35%;
 }
-.carousel-item img{
+#myCarousel .carousel-item img{
     min-height: 400px;
 }
 .marketing .col-lg-4 {
@@ -67,8 +78,75 @@ body{
 footer.bg-body-tertiary{
     background:url('../images/plusBG2.png') right center no-repeat;
 }
+.extraCarousel .carousel-control-next, .extraCarousel .carousel-control-prev{
+    width:3%;
+}
 @media (max-width: 480px){
     .navbar-brand img{
         max-width: 220px;
     }
+    .extraCarousel .carousel-control-next, .extraCarousel .carousel-control-prev{
+        width:10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .extraCarousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .extraCarousel .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .extraCarousel .carousel-control-next, .extraCarousel .carousel-control-prev{
+        width:10%;
+    }
+}
+
+.extraCarousel .carousel-inner .carousel-item.active,
+.extraCarousel .carousel-inner .carousel-item-next,
+.extraCarousel .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .extraCarousel .carousel-inner .carousel-item-end.active,
+    .extraCarousel .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .extraCarousel .carousel-inner .carousel-item-start.active, 
+    .extraCarousel .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.extraCarousel .carousel-inner .carousel-item-end,
+.extraCarousel .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.extraCarousel .card{
+    min-height: 200px;
+    max-height: 200px;
+    margin-right: 15px;
+    border-radius: 0;
+    
+}
+
+.extraCarousel .card-img-overlay{
+    font-size:2rem;
+    background: rgba(0,0,0,.5);
+    color:#fff;
+    border-radius: 0;
+}
+/*-------Inner Pages -----*/
+.inner-pages{
+    background-image:url('../images/header1.png');
+    background-size: cover;
+}
+.inner-pages.services{
+    background-image:url('../images/header2.png');
+    
 }
